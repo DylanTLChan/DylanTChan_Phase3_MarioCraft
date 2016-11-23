@@ -17,3 +17,6 @@ c:\users\dylan\documents\visual studio 2013\Projects\DylanChan_MarioCraft_Phase3
 c:\users\dylan\documents\visual studio 2013\Projects\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\DylanChan_MarioCraft_Phase3.csproj.GenerateResource.Cache
 c:\users\dylan\documents\visual studio 2013\Projects\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\DylanChan_MarioCraft_Phase3.exe
 c:\users\dylan\documents\visual studio 2013\Projects\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\DylanChan_MarioCraft_Phase3.pdb
+C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\bin\Debug\DylanChan_MarioCraft_Phase3.exe.config
+C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\DylanChan_MarioCraft_Phase3.exe
+C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\DylanChan_MarioCraft_Phase3.pdb

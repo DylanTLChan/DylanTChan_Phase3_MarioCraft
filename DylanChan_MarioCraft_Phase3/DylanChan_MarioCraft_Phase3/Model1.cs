@@ -5,6 +5,8 @@ namespace DylanChan_MarioCraft_Phase3
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
+    //https://github.com/DylanTLChan/DylanTChan_Phase3_MarioCraft.git
+
     public partial class Model1 : DbContext
     {
         public Model1()
