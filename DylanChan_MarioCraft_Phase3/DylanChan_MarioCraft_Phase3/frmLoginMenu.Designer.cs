@@ -1,6 +1,6 @@
 ﻿namespace DylanChan_MarioCraft_Phase3
 {
-    partial class frmRegisterMenu
+    partial class frmLoginMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -32,10 +32,10 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnReg = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,70 +62,70 @@
             this.txtEmail.Location = new System.Drawing.Point(484, 130);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(165, 20);
-            this.txtEmail.TabIndex = 1;
+            this.txtEmail.TabIndex = 2;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(484, 201);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(165, 20);
-            this.txtPassword.TabIndex = 2;
+            this.txtPassword.TabIndex = 3;
             // 
-            // btnReg
+            // button1
             // 
-            this.btnReg.Location = new System.Drawing.Point(528, 258);
-            this.btnReg.Name = "btnReg";
-            this.btnReg.Size = new System.Drawing.Size(75, 23);
-            this.btnReg.TabIndex = 3;
-            this.btnReg.Text = "Register";
-            this.btnReg.UseVisualStyleBackColor = true;
-            this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DylanChan_MarioCraft_Phase3.Properties.Resources.MarioCraftReg;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 345);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(720, 1);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.button1.Location = new System.Drawing.Point(528, 258);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Login";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnLogin);
             // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(720, 323);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 6;
+            this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // frmRegisterMenu
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DylanChan_MarioCraft_Phase3.Properties.Resources.MarioCraftLogin;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(352, 345);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(353, 323);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 7;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // frmLoginMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 347);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnReg);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
-            this.Name = "frmRegisterMenu";
-            this.Text = "frmRegisterMenu";
-            this.Load += new System.EventHandler(this.frmRegisterMenu_Load);
+            this.Name = "frmLoginMenu";
+            this.Text = "frmLoginMenu";
+            this.Load += new System.EventHandler(this.frmLoginMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,9 +138,9 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnReg;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnBack;
     }
 }

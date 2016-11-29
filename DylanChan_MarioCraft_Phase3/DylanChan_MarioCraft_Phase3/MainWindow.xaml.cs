@@ -27,11 +27,15 @@ namespace DylanChan_MarioCraft_Phase3
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            /*MainWindow mainWin = new MainWindow();
-            mainWin.Hide();*/
+            //Hides the MainWindow
+            this.Hide();
 
+            //Shows frmRegisterMenu GUI
             frmRegisterMenu regMenu = new frmRegisterMenu();
             regMenu.Show();
+
+            //frmLoginMenu loginMenu = new frmLoginMenu();
+            //loginMenu.Show();
 
          }
     }
