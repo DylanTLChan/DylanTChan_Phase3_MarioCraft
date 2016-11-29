@@ -88,6 +88,7 @@
             this.Controls.Add(this.lblEmail);
             this.Name = "frmRegisterMenu";
             this.Text = "frmRegisterMenu";
+            this.Load += new System.EventHandler(this.frmRegisterMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

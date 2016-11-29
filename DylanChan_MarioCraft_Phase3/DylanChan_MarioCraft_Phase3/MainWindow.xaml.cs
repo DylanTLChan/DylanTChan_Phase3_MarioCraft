@@ -24,5 +24,15 @@ namespace DylanChan_MarioCraft_Phase3
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            /*MainWindow mainWin = new MainWindow();
+            mainWin.Hide();*/
+
+            frmRegisterMenu regMenu = new frmRegisterMenu();
+            regMenu.Show();
+
+         }
     }
 }

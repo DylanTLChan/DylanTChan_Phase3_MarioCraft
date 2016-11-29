@@ -16,5 +16,10 @@ namespace DylanChan_MarioCraft_Phase3
         {
             InitializeComponent();
         }
+
+        private void frmRegisterMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
