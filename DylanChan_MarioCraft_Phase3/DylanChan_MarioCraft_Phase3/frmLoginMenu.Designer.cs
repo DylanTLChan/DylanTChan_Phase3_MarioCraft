@@ -36,6 +36,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
+            this.lblLoginInstructions = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,11 +111,21 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // lblLoginInstructions
+            // 
+            this.lblLoginInstructions.AutoSize = true;
+            this.lblLoginInstructions.Location = new System.Drawing.Point(396, 88);
+            this.lblLoginInstructions.Name = "lblLoginInstructions";
+            this.lblLoginInstructions.Size = new System.Drawing.Size(147, 13);
+            this.lblLoginInstructions.TabIndex = 8;
+            this.lblLoginInstructions.Text = "Please enter your login details";
+            // 
             // frmLoginMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 347);
+            this.Controls.Add(this.lblLoginInstructions);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnExit);
@@ -142,5 +153,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label lblLoginInstructions;
     }
 }

@@ -36,6 +36,8 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblLoginPrompt = new System.Windows.Forms.Label();
+            this.lblRegInstructions = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +65,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(165, 20);
             this.txtEmail.TabIndex = 1;
-          
             // 
             // txtPassword
             // 
@@ -71,7 +72,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(165, 20);
             this.txtPassword.TabIndex = 2;
-      
             // 
             // btnReg
             // 
@@ -112,11 +112,31 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // lblLoginPrompt
+            // 
+            this.lblLoginPrompt.AutoSize = true;
+            this.lblLoginPrompt.Location = new System.Drawing.Point(557, 6);
+            this.lblLoginPrompt.Name = "lblLoginPrompt";
+            this.lblLoginPrompt.Size = new System.Drawing.Size(157, 13);
+            this.lblLoginPrompt.TabIndex = 7;
+            this.lblLoginPrompt.Text = "Click Login to go to Login Menu";
+            // 
+            // lblRegInstructions
+            // 
+            this.lblRegInstructions.AutoSize = true;
+            this.lblRegInstructions.Location = new System.Drawing.Point(396, 91);
+            this.lblRegInstructions.Name = "lblRegInstructions";
+            this.lblRegInstructions.Size = new System.Drawing.Size(239, 13);
+            this.lblRegInstructions.TabIndex = 8;
+            this.lblRegInstructions.Text = "Please enter Email and Password for registeration";
+            // 
             // frmRegisterMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 347);
+            this.Controls.Add(this.lblRegInstructions);
+            this.Controls.Add(this.lblLoginPrompt);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox1);
@@ -144,5 +164,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblLoginPrompt;
+        private System.Windows.Forms.Label lblRegInstructions;
     }
 }
