@@ -40,7 +40,7 @@ namespace DylanChan_MarioCraft_Phase3
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmLoginMenu frmNext = new frmLoginMenu(this);
+            frmLoginMenu frmNext = new frmLoginMenu();
             this.Close();
             frmNext.Show();
 
@@ -50,5 +50,7 @@ namespace DylanChan_MarioCraft_Phase3
         {
             Application.Exit();
         }
+
+      
     }
 }
