@@ -35,12 +35,19 @@ namespace DylanChan_MarioCraft_Phase3
         {
 
             Model1 ctx = new Model1();
-            var result = from gameUser in ctx.GAMEUSERs
-                         where gameUser.USEREMAIL == "abyshegef@gmail.com"
+           var result = from gameUser in ctx.GAMEUSERs
+                         where gameUser.USEREMAIL == "Khussey@gmail.com"
                          select gameUser;
             this.txtEmail.Text = result.First().USEREMAIL;
 
-            
+            var result1 = from gameUser in ctx.GAMEUSERs
+                          where gameUser.USERPASSWORD == "K83hussey"
+                          select gameUser;
+            this.txtPassword.Text = result1.First().USERPASSWORD;
+
+         
+
+
             
             //Confirmation Message
             MessageBox.Show("Successfully registred", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
