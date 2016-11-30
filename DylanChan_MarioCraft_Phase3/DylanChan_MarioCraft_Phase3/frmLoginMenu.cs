@@ -13,6 +13,7 @@ namespace DylanChan_MarioCraft_Phase3
     public partial class frmLoginMenu : Form
     {
         private frmRegisterMenu frmRegisterMenu;
+        GAMEUSER gu = new GAMEUSER();
 
         public frmLoginMenu()
         {
@@ -28,6 +29,7 @@ namespace DylanChan_MarioCraft_Phase3
         private void frmLoginMenu_Load(object sender, EventArgs e)
         {
 
+          
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -37,7 +39,33 @@ namespace DylanChan_MarioCraft_Phase3
 
         private void btnLogin(object sender, EventArgs e)
         {
+           if(txtEmail.Text.Equals(""))
+           {
+               MessageBox.Show("Please enter Email", "Field Empty",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+               txtEmail.Focus();
+               return;
+           }
 
+           if (txtPassword.Text.Equals(""))
+           {
+               MessageBox.Show("Please enter password", "Field Empty",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+               txtEmail.Focus();
+               return;
+           }
+
+           if(txtEmail.Text.Equals(gu.USEREMAIL))
+           {
+
+           }
+           
+                
+            
+
+            //Reset Textbox
+            txtEmail.Text = "";
+            txtPassword.Text = "";
         }
 
         private void btnBack_Click(object sender, EventArgs e)

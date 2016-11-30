@@ -34,8 +34,20 @@ namespace DylanChan_MarioCraft_Phase3
         private void btnReg_Click(object sender, EventArgs e)
         {
 
+            Model1 ctx = new Model1();
+            var result = from gameUser in ctx.GAMEUSERs
+                         where gameUser.USEREMAIL == "abyshegef@gmail.com"
+                         select gameUser;
+            this.txtEmail.Text = result.First().USEREMAIL;
+
+            
+            
             //Confirmation Message
             MessageBox.Show("Successfully registred", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //Resets Textbox
+            txtEmail.Text = "";
+            txtPassword.Text = "";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

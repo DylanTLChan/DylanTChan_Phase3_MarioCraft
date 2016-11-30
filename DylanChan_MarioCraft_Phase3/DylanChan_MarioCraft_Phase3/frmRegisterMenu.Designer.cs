@@ -126,9 +126,9 @@
             this.lblRegInstructions.AutoSize = true;
             this.lblRegInstructions.Location = new System.Drawing.Point(396, 91);
             this.lblRegInstructions.Name = "lblRegInstructions";
-            this.lblRegInstructions.Size = new System.Drawing.Size(239, 13);
+            this.lblRegInstructions.Size = new System.Drawing.Size(294, 13);
             this.lblRegInstructions.TabIndex = 8;
-            this.lblRegInstructions.Text = "Please enter Email and Password for registeration";
+            this.lblRegInstructions.Text = "Please enter an Email address and Password for registeration";
             // 
             // frmRegisterMenu
             // 
