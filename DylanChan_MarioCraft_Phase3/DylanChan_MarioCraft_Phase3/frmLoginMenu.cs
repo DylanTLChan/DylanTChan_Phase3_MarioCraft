@@ -77,9 +77,6 @@ namespace DylanChan_MarioCraft_Phase3
             }
 
 
-           
-
-
            //Reset Textbox
            txtEmail.Text = "";
            txtPassword.Text = "";

@@ -33,7 +33,7 @@ namespace DylanChan_MarioCraft_Phase3
 
         private void btnReg_Click(object sender, EventArgs e)
         {
-
+            //Retrieve 
             /*Model1 ctx = new Model1();
            var result = from gameUser in ctx.GAMEUSERs
                          where gameUser.USEREMAIL == "Khussey@gmail.com"
@@ -59,12 +59,17 @@ namespace DylanChan_MarioCraft_Phase3
                 return;
             }
 
+            //Register new Users
             using(var context = new Model1())
             {
                 GAMEUSER newRegUser = new GAMEUSER()
+                
                 {
+                 
+                    //context.GAMEUSERs.Max().USERID;
                     USEREMAIL = txtEmail.Text,
-                    USERPASSWORD = txtPassword.Text
+                    USERPASSWORD = txtPassword.Text,
+
                 };
 
                 try
@@ -77,14 +82,11 @@ namespace DylanChan_MarioCraft_Phase3
 
                 catch(Exception ex)
                 {
-                    MessageBox.Show(ex.GetBaseException().ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   MessageBox.Show(ex.GetBaseException().ToString(),"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    
                 }
             }
-
-
             
-            //Confirmation Message
-           // MessageBox.Show("Successfully registred", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //Resets Textbox
             txtEmail.Text = "";
