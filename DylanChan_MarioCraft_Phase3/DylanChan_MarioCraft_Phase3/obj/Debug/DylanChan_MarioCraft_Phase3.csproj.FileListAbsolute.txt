@@ -26,7 +26,6 @@ C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraf
 C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
 C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\bin\Debug\EntityFramework.xml
 C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\DylanChan_MarioCraft_Phase3.csprojResolveAssemblyReference.cache
 C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\MainWindow.baml
 C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\MainWindow.g.cs
 C:\Users\Dylan\Documents\GitHub\DylanTChan_Phase3_MarioCraft\DylanChan_MarioCraft_Phase3\DylanChan_MarioCraft_Phase3\obj\Debug\App.g.cs
