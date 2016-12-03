@@ -13,7 +13,8 @@ namespace DylanChan_MarioCraft_Phase3
     public partial class frmLoginMenu : Form
     {
         private frmRegisterMenu frmRegisterMenu;
-        GAMEUSER gu = new GAMEUSER();
+        //GAMEUSER gu = new GAMEUSER();
+        Model1 context = new Model1();
 
         public frmLoginMenu()
         {
@@ -56,31 +57,41 @@ namespace DylanChan_MarioCraft_Phase3
                 return;
             }
 
-          /*if(txtEmail.Text.Equals(gu.USEREMAIL) && txtPassword.Text.Equals(gu.USERPASSWORD))
-           {
-               MessageBox.Show("Successful Login", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-              
-           }*/
+                try
+                {
+                    var gameUser = from u in context.GAMEUSERs where u.USEREMAIL == txtEmail.Text select u;
 
-            if(!txtEmail.Text.Equals(gu.USEREMAIL) && !txtPassword.Text.Equals(gu.USERPASSWORD))
-            {
-                MessageBox.Show("Please enter correct email and password ", "Incorrect Details",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtEmail.Focus();
-                return;
+                    if (txtEmail.Text != gameUser.First().USEREMAIL)
+                    {
+                        MessageBox.Show("We cannot find an account with that Email address", "Incorrect Email",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtEmail.Focus();
+                        return;
+
+
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("Successful Login", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.GetBaseException().ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
+
+
+                //Reset Textbox
+                txtEmail.Text = "";
+                txtPassword.Text = "";
             }
-
-            else
-            {
-                MessageBox.Show("Successful Login", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-
-           //Reset Textbox
-           txtEmail.Text = "";
-           txtPassword.Text = "";
-        }
+        
 
         private void btnBack_Click(object sender, EventArgs e)
         {

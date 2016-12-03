@@ -66,7 +66,7 @@ namespace DylanChan_MarioCraft_Phase3
                 
                 {
                  
-                    //context.GAMEUSERs.Max().USERID;
+                    
                     USEREMAIL = txtEmail.Text,
                     USERPASSWORD = txtPassword.Text,
 
