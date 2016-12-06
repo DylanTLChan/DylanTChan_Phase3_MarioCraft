@@ -116,7 +116,7 @@ namespace DylanChan_MarioCraft_Phase3
 
         private void radbtnShowPass_CheckedChanged(object sender, EventArgs e)
         {
-            txtPassword.UseSystemPasswordChar = false;
+           txtPassword.UseSystemPasswordChar = false;
         }
 
         private void radbtnHidePass_CheckedChanged(object sender, EventArgs e)
@@ -124,6 +124,8 @@ namespace DylanChan_MarioCraft_Phase3
 
             txtPassword.UseSystemPasswordChar = true;
         }
+
+      
 
        
     }
