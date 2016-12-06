@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoginMenu));
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -37,24 +38,28 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblLoginInstructions = new System.Windows.Forms.Label();
+            this.radbtnShowPass = new System.Windows.Forms.RadioButton();
+            this.radbtnHidePass = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(396, 130);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.Size = new System.Drawing.Size(37, 13);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(396, 204);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblPassword.Size = new System.Drawing.Size(61, 13);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password";
             // 
@@ -74,6 +79,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(528, 258);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -120,11 +126,38 @@
             this.lblLoginInstructions.TabIndex = 8;
             this.lblLoginInstructions.Text = "Please enter your login details";
             // 
+            // radbtnShowPass
+            // 
+            this.radbtnShowPass.AutoSize = true;
+            this.radbtnShowPass.Location = new System.Drawing.Point(669, 204);
+            this.radbtnShowPass.Name = "radbtnShowPass";
+            this.radbtnShowPass.Size = new System.Drawing.Size(52, 17);
+            this.radbtnShowPass.TabIndex = 9;
+            this.radbtnShowPass.TabStop = true;
+            this.radbtnShowPass.Text = "Show";
+            this.radbtnShowPass.UseVisualStyleBackColor = true;
+            this.radbtnShowPass.CheckedChanged += new System.EventHandler(this.radbtnShowPass_CheckedChanged);
+            // 
+            // radbtnHidePass
+            // 
+            this.radbtnHidePass.AutoSize = true;
+            this.radbtnHidePass.Location = new System.Drawing.Point(720, 204);
+            this.radbtnHidePass.Name = "radbtnHidePass";
+            this.radbtnHidePass.Size = new System.Drawing.Size(47, 17);
+            this.radbtnHidePass.TabIndex = 10;
+            this.radbtnHidePass.TabStop = true;
+            this.radbtnHidePass.Text = "Hide";
+            this.radbtnHidePass.UseVisualStyleBackColor = true;
+            this.radbtnHidePass.CheckedChanged += new System.EventHandler(this.radbtnHidePass_CheckedChanged);
+            // 
             // frmLoginMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(797, 347);
+            this.Controls.Add(this.radbtnHidePass);
+            this.Controls.Add(this.radbtnShowPass);
             this.Controls.Add(this.lblLoginInstructions);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pictureBox1);
@@ -134,6 +167,7 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLoginMenu";
             this.Text = "frmLoginMenu";
             this.Load += new System.EventHandler(this.frmLoginMenu_Load);
@@ -154,5 +188,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblLoginInstructions;
+        private System.Windows.Forms.RadioButton radbtnShowPass;
+        private System.Windows.Forms.RadioButton radbtnHidePass;
     }
 }

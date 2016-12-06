@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegisterMenu));
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -44,18 +45,20 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(396, 130);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.Size = new System.Drawing.Size(37, 13);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(396, 204);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblPassword.Size = new System.Drawing.Size(61, 13);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password";
             // 
@@ -75,6 +78,7 @@
             // 
             // btnReg
             // 
+            this.btnReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReg.Location = new System.Drawing.Point(528, 258);
             this.btnReg.Name = "btnReg";
             this.btnReg.Size = new System.Drawing.Size(75, 23);
@@ -117,9 +121,9 @@
             this.lblLoginPrompt.AutoSize = true;
             this.lblLoginPrompt.Location = new System.Drawing.Point(557, 6);
             this.lblLoginPrompt.Name = "lblLoginPrompt";
-            this.lblLoginPrompt.Size = new System.Drawing.Size(157, 13);
+            this.lblLoginPrompt.Size = new System.Drawing.Size(152, 13);
             this.lblLoginPrompt.TabIndex = 7;
-            this.lblLoginPrompt.Text = "Click Login to go to Login Menu";
+            this.lblLoginPrompt.Text = "Click here to go to Login Menu";
             // 
             // lblRegInstructions
             // 
@@ -134,6 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(797, 347);
             this.Controls.Add(this.lblRegInstructions);
             this.Controls.Add(this.lblLoginPrompt);
@@ -145,6 +150,7 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegisterMenu";
             this.Text = "frmRegisterMenu";
             this.Load += new System.EventHandler(this.frmRegisterMenu_Load);

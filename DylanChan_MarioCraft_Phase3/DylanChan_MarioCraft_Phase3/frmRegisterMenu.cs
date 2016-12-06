@@ -13,10 +13,13 @@ namespace DylanChan_MarioCraft_Phase3
     public partial class frmRegisterMenu : Form
     {
         private frmLoginMenu loginMenu;
-
+      
+        
        public frmRegisterMenu()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+           
            
         }
 
@@ -28,7 +31,7 @@ namespace DylanChan_MarioCraft_Phase3
 
         private void frmRegisterMenu_Load(object sender, EventArgs e)
         {
-         
+           
         }
 
         private void btnReg_Click(object sender, EventArgs e)
@@ -59,13 +62,15 @@ namespace DylanChan_MarioCraft_Phase3
                 return;
             }
 
+           
+
             //Register new Users
             using(var context = new Model1())
             {
                 GAMEUSER newRegUser = new GAMEUSER()
                 
                 {
-                 
+                
                     
                     USEREMAIL = txtEmail.Text,
                     USERPASSWORD = txtPassword.Text,
@@ -76,12 +81,13 @@ namespace DylanChan_MarioCraft_Phase3
                 {
                     var result = context.GAMEUSERs.Add(newRegUser);
                     context.SaveChanges();
-                    MessageBox.Show(newRegUser.USEREMAIL + " " + newRegUser.USERPASSWORD +
-                        "You have Successfully Registered","Registered", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Email: " + newRegUser.USEREMAIL + " and " + " Password: " + newRegUser.USERPASSWORD +
+                        " \nYou have Successfully Registered","Registered ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 catch(Exception ex)
                 {
+
                    MessageBox.Show(ex.GetBaseException().ToString(),"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     
                 }
