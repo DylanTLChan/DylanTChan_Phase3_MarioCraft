@@ -20,34 +20,26 @@ namespace DylanChan_MarioCraft_Phase3
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.FixedSingle;
            
-           
+  
         }
 
         public frmRegisterMenu(frmLoginMenu loginMenu)
        {
            InitializeComponent();
            this.loginMenu = loginMenu;
+          
        }
 
         private void frmRegisterMenu_Load(object sender, EventArgs e)
         {
-           
+            //reference https://social.msdn.microsoft.com/Forums/vstudio/en-US/77a2ce66-65dd-4fb8-b252-7327b2e154be/hiding-the-password-in-a-textbox-with-c?forum=netfxbcl
+            //hides password when user inputs in the password field.
+            txtPassword.UseSystemPasswordChar = true;
         }
 
         private void btnReg_Click(object sender, EventArgs e)
         {
-            //Retrieve 
-            /*Model1 ctx = new Model1();
-           var result = from gameUser in ctx.GAMEUSERs
-                         where gameUser.USEREMAIL == "Khussey@gmail.com"
-                         select gameUser;
-            this.txtEmail.Text = result.First().USEREMAIL;
-
-            var result1 = from gameUser in ctx.GAMEUSERs
-                          where gameUser.USERPASSWORD == "K83hussey"
-                          select gameUser;
-            this.txtPassword.Text = result1.First().USERPASSWORD;*/
-
+           
             if(txtEmail.Text.Equals(""))
             {
                 MessageBox.Show("Please Enter in a Email", "Field Empty", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -110,6 +102,16 @@ namespace DylanChan_MarioCraft_Phase3
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void radBtnShow_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = false;
+        }
+
+        private void btnRadHide_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = true;
         }
 
       

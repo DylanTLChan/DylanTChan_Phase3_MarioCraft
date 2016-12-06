@@ -46,36 +46,38 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(396, 130);
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(372, 144);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(37, 13);
+            this.lblEmail.Size = new System.Drawing.Size(65, 25);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(396, 204);
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(372, 195);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(61, 13);
+            this.lblPassword.Size = new System.Drawing.Size(106, 25);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(484, 130);
+            this.txtEmail.Location = new System.Drawing.Point(484, 144);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(165, 20);
-            this.txtEmail.TabIndex = 2;
+            this.txtEmail.TabIndex = 0;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(484, 201);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(165, 20);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.TabIndex = 1;
             // 
             // button1
             // 
@@ -95,7 +97,7 @@
             this.btnExit.Location = new System.Drawing.Point(720, 323);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 5;
+            this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -115,7 +117,7 @@
             this.btnBack.Location = new System.Drawing.Point(353, 323);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 7;
+            this.btnBack.TabIndex = 5;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -123,41 +125,49 @@
             // lblLoginInstructions
             // 
             this.lblLoginInstructions.AutoSize = true;
-            this.lblLoginInstructions.Location = new System.Drawing.Point(396, 88);
+            this.lblLoginInstructions.BackColor = System.Drawing.Color.Transparent;
+            this.lblLoginInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoginInstructions.ForeColor = System.Drawing.Color.White;
+            this.lblLoginInstructions.Location = new System.Drawing.Point(392, 89);
             this.lblLoginInstructions.Name = "lblLoginInstructions";
-            this.lblLoginInstructions.Size = new System.Drawing.Size(147, 13);
+            this.lblLoginInstructions.Size = new System.Drawing.Size(199, 17);
             this.lblLoginInstructions.TabIndex = 8;
             this.lblLoginInstructions.Text = "Please enter your login details";
             // 
             // radbtnShowPass
             // 
             this.radbtnShowPass.AutoSize = true;
+            this.radbtnShowPass.BackColor = System.Drawing.Color.Transparent;
+            this.radbtnShowPass.ForeColor = System.Drawing.Color.White;
             this.radbtnShowPass.Location = new System.Drawing.Point(669, 204);
             this.radbtnShowPass.Name = "radbtnShowPass";
             this.radbtnShowPass.Size = new System.Drawing.Size(52, 17);
-            this.radbtnShowPass.TabIndex = 9;
+            this.radbtnShowPass.TabIndex = 2;
             this.radbtnShowPass.TabStop = true;
             this.radbtnShowPass.Text = "Show";
-            this.radbtnShowPass.UseVisualStyleBackColor = true;
+            this.radbtnShowPass.UseVisualStyleBackColor = false;
             this.radbtnShowPass.CheckedChanged += new System.EventHandler(this.radbtnShowPass_CheckedChanged);
             // 
             // radbtnHidePass
             // 
             this.radbtnHidePass.AutoSize = true;
+            this.radbtnHidePass.BackColor = System.Drawing.Color.Transparent;
+            this.radbtnHidePass.ForeColor = System.Drawing.Color.White;
             this.radbtnHidePass.Location = new System.Drawing.Point(720, 204);
             this.radbtnHidePass.Name = "radbtnHidePass";
             this.radbtnHidePass.Size = new System.Drawing.Size(47, 17);
-            this.radbtnHidePass.TabIndex = 10;
+            this.radbtnHidePass.TabIndex = 3;
             this.radbtnHidePass.TabStop = true;
             this.radbtnHidePass.Text = "Hide";
-            this.radbtnHidePass.UseVisualStyleBackColor = true;
+            this.radbtnHidePass.UseVisualStyleBackColor = false;
             this.radbtnHidePass.CheckedChanged += new System.EventHandler(this.radbtnHidePass_CheckedChanged);
             // 
             // frmLoginMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::DylanChan_MarioCraft_Phase3.Properties.Resources.Mario_Wallpaper;
             this.ClientSize = new System.Drawing.Size(797, 347);
             this.Controls.Add(this.radbtnHidePass);
             this.Controls.Add(this.radbtnShowPass);

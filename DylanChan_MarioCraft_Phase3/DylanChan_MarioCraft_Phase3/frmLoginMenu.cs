@@ -13,8 +13,8 @@ namespace DylanChan_MarioCraft_Phase3
     public partial class frmLoginMenu : Form
     {
         private frmRegisterMenu frmRegisterMenu;
-        //GAMEUSER gu = new GAMEUSER();
         Model1 context = new Model1();
+        private frmGameUserMenu frmGameUserMenu;
 
         public frmLoginMenu()
         {
@@ -23,12 +23,19 @@ namespace DylanChan_MarioCraft_Phase3
 
         public frmLoginMenu(frmRegisterMenu frmRegisterMenu)
         {
-           
+       
             this.frmRegisterMenu = frmRegisterMenu;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             
         }
 
+        public frmLoginMenu(frmGameUserMenu frmGameUserMenu)
+        {
+
+            this.frmGameUserMenu = frmGameUserMenu;
+ 
+        }
+       
         private void frmLoginMenu_Load(object sender, EventArgs e)
         {
             //reference https://social.msdn.microsoft.com/Forums/vstudio/en-US/77a2ce66-65dd-4fb8-b252-7327b2e154be/hiding-the-password-in-a-textbox-with-c?forum=netfxbcl
@@ -43,7 +50,7 @@ namespace DylanChan_MarioCraft_Phase3
 
         private void btnLogin(object sender, EventArgs e)
         {
-            
+           
 
             if (txtEmail.Text.Equals(""))
             {
@@ -77,6 +84,11 @@ namespace DylanChan_MarioCraft_Phase3
                      MessageBoxButtons.OK, MessageBoxIcon.Information);
                      txtEmail.Text = "";
                      txtPassword.Text = "";
+
+                     frmGameUserMenu frmNext = new frmGameUserMenu();
+                     this.Close();
+                     frmNext.Show();
+
                  }
 
                  else
@@ -101,8 +113,8 @@ namespace DylanChan_MarioCraft_Phase3
 
 
 
-
-               
+             txtPassword.UseSystemPasswordChar = true;
+             
             }
         
 
@@ -121,11 +133,10 @@ namespace DylanChan_MarioCraft_Phase3
 
         private void radbtnHidePass_CheckedChanged(object sender, EventArgs e)
         {
-
             txtPassword.UseSystemPasswordChar = true;
         }
 
-      
+       
 
        
     }

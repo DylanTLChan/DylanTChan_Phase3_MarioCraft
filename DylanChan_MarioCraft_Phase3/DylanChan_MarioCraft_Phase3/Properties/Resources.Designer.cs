@@ -63,6 +63,16 @@ namespace DylanChan_MarioCraft_Phase3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mario_Wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("Mario-Wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MarioCraft {
             get {
                 object obj = ResourceManager.GetObject("MarioCraft", resourceCulture);
