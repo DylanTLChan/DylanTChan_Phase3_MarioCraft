@@ -13,16 +13,26 @@ namespace DylanChan_MarioCraft_Phase3
    
     public partial class frmGameUserMenu : Form
     {
+        Model1 ctx = new Model1();
         private frmLoginMenu frmLoginMenu;
+        String email;
         public frmGameUserMenu()
         {
             InitializeComponent();
         }
+        public frmGameUserMenu(String email)
+        {
+            InitializeComponent();
+            this.email = email;
+        }
 
         private void GameUserMenu_Load(object sender, EventArgs e)
         {
-
+            // TODO: This line of code loads data into the 'dataSet1.GAMEUSERDETAILS' table. You can move, or remove it, as needed.
+            this.gAMEUSERDETAILSTableAdapter.FillBy(dataSet1.GAMEUSERDETAILS,email);
+           
         }
+        
 
          public frmGameUserMenu(frmLoginMenu frmLoginMenu)
         {
@@ -32,25 +42,15 @@ namespace DylanChan_MarioCraft_Phase3
         }
 
 
-        private void btnRetrieve_Click(object sender, EventArgs e)
-        {
+        
             //Retrieve 
-            Model1 ctx = new Model1();
-           var retriveEmail = from gameUser in ctx.GAMEUSERs
-                         where gameUser.USEREMAIL == "DylanChan@gmail.com"
-                         select gameUser;
-           this.txtEmail.Text = retriveEmail.First().USEREMAIL;
-
-            var retrivePassword = from gameUser in ctx.GAMEUSERs
-                          where gameUser.USERPASSWORD == "Dcqwer123"
-                          select gameUser;
-            this.txtPassword.Text = retrivePassword.First().USERPASSWORD;
-
+           /*Model1 ctx = new Model1();
+  
             var retriveItem = from gameUser in ctx.RUCKSACKs
                           where gameUser.ITEMDESC == "Opal"
                           select gameUser;
-            this.txtItem.Text = retriveItem.First().ITEMDESC;
-        }
+            this.txtItem.Text = retriveItem.First().ITEMDESC;*/
+        
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -64,5 +64,7 @@ namespace DylanChan_MarioCraft_Phase3
             this.Close();
             logout.Show();
         }
+
+       
     }
 }

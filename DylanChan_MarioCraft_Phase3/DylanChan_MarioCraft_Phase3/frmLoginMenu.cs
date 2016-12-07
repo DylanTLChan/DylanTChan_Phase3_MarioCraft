@@ -82,10 +82,10 @@ namespace DylanChan_MarioCraft_Phase3
                  {
                      MessageBox.Show("You have Successful logged in", "Login succesful",
                      MessageBoxButtons.OK, MessageBoxIcon.Information);
-                     txtEmail.Text = "";
-                     txtPassword.Text = "";
+                     //txtEmail.Text = "";
+                    // txtPassword.Text = "";
 
-                     frmGameUserMenu frmNext = new frmGameUserMenu();
+                     frmGameUserMenu frmNext = new frmGameUserMenu(txtEmail.Text);//email that is inputed by user
                      this.Close();
                      frmNext.Show();
 
