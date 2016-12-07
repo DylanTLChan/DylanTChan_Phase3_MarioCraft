@@ -15,7 +15,8 @@ namespace DylanChan_MarioCraft_Phase3
     {
         Model1 ctx = new Model1();
         private frmLoginMenu frmLoginMenu;
-        String email;
+        private String email;
+        
         public frmGameUserMenu()
         {
             InitializeComponent();
@@ -25,10 +26,12 @@ namespace DylanChan_MarioCraft_Phase3
             InitializeComponent();
             this.email = email;
         }
+     
 
         private void GameUserMenu_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSet1.GAMEUSERDETAILS' table. You can move, or remove it, as needed.
+           
+             //This line of code loads data into the 'dataSet1.GAMEUSERDETAILS' table.
             this.gAMEUSERDETAILSTableAdapter.FillBy(dataSet1.GAMEUSERDETAILS,email);
            
         }
@@ -40,7 +43,6 @@ namespace DylanChan_MarioCraft_Phase3
             this.frmLoginMenu = frmLoginMenu;
  
         }
-
 
         
             //Retrieve 
@@ -66,5 +68,6 @@ namespace DylanChan_MarioCraft_Phase3
         }
 
        
+
     }
 }

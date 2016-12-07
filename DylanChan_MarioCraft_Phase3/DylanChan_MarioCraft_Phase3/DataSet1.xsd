@@ -416,7 +416,16 @@
               <Mapping SourceColumn="ITEMDESC" DataSetColumn="ITEMDESC" />
               <Mapping SourceColumn="ITEMQTY" DataSetColumn="ITEMQTY" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ADMIN.QUICKINVENTORYVIEW" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TOOLNAME, ITEMDESC, ITEMQTY FROM ADMIN.QUICKINVENTORYVIEW</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -426,7 +435,7 @@
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="GAMEMAP" msprop:Generator_TableClassName="GAMEMAPDataTable" msprop:Generator_TableVarName="tableGAMEMAP" msprop:Generator_RowChangedName="GAMEMAPRowChanged" msprop:Generator_TablePropName="GAMEMAP" msprop:Generator_RowDeletingName="GAMEMAPRowDeleting" msprop:Generator_RowChangingName="GAMEMAPRowChanging" msprop:Generator_RowEvHandlerName="GAMEMAPRowChangeEventHandler" msprop:Generator_RowDeletedName="GAMEMAPRowDeleted" msprop:Generator_RowClassName="GAMEMAPRow" msprop:Generator_UserTableName="GAMEMAP" msprop:Generator_RowEvArgName="GAMEMAPRowChangeEvent">
+        <xs:element name="GAMEMAP" msprop:Generator_TableClassName="GAMEMAPDataTable" msprop:Generator_TableVarName="tableGAMEMAP" msprop:Generator_TablePropName="GAMEMAP" msprop:Generator_RowDeletingName="GAMEMAPRowDeleting" msprop:Generator_RowChangingName="GAMEMAPRowChanging" msprop:Generator_RowEvHandlerName="GAMEMAPRowChangeEventHandler" msprop:Generator_RowDeletedName="GAMEMAPRowDeleted" msprop:Generator_UserTableName="GAMEMAP" msprop:Generator_RowChangedName="GAMEMAPRowChanged" msprop:Generator_RowEvArgName="GAMEMAPRowChangeEvent" msprop:Generator_RowClassName="GAMEMAPRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="COORDINATESXY" msprop:Generator_ColumnVarNameInTable="columnCOORDINATESXY" msprop:Generator_ColumnPropNameInRow="COORDINATESXY" msprop:Generator_ColumnPropNameInTable="COORDINATESXYColumn" msprop:Generator_UserColumnName="COORDINATESXY" type="xs:float" />
@@ -448,7 +457,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="GAMEUSER" msprop:Generator_TableClassName="GAMEUSERDataTable" msprop:Generator_TableVarName="tableGAMEUSER" msprop:Generator_RowChangedName="GAMEUSERRowChanged" msprop:Generator_TablePropName="GAMEUSER" msprop:Generator_RowDeletingName="GAMEUSERRowDeleting" msprop:Generator_RowChangingName="GAMEUSERRowChanging" msprop:Generator_RowEvHandlerName="GAMEUSERRowChangeEventHandler" msprop:Generator_RowDeletedName="GAMEUSERRowDeleted" msprop:Generator_RowClassName="GAMEUSERRow" msprop:Generator_UserTableName="GAMEUSER" msprop:Generator_RowEvArgName="GAMEUSERRowChangeEvent">
+        <xs:element name="GAMEUSER" msprop:Generator_TableClassName="GAMEUSERDataTable" msprop:Generator_TableVarName="tableGAMEUSER" msprop:Generator_TablePropName="GAMEUSER" msprop:Generator_RowDeletingName="GAMEUSERRowDeleting" msprop:Generator_RowChangingName="GAMEUSERRowChanging" msprop:Generator_RowEvHandlerName="GAMEUSERRowChangeEventHandler" msprop:Generator_RowDeletedName="GAMEUSERRowDeleted" msprop:Generator_UserTableName="GAMEUSER" msprop:Generator_RowChangedName="GAMEUSERRowChanged" msprop:Generator_RowEvArgName="GAMEUSERRowChangeEvent" msprop:Generator_RowClassName="GAMEUSERRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="USERID" msprop:Generator_ColumnVarNameInTable="columnUSERID" msprop:Generator_ColumnPropNameInRow="USERID" msprop:Generator_ColumnPropNameInTable="USERIDColumn" msprop:Generator_UserColumnName="USERID" type="xs:short" />
@@ -469,7 +478,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="MATERIAL" msprop:Generator_TableClassName="MATERIALDataTable" msprop:Generator_TableVarName="tableMATERIAL" msprop:Generator_RowChangedName="MATERIALRowChanged" msprop:Generator_TablePropName="MATERIAL" msprop:Generator_RowDeletingName="MATERIALRowDeleting" msprop:Generator_RowChangingName="MATERIALRowChanging" msprop:Generator_RowEvHandlerName="MATERIALRowChangeEventHandler" msprop:Generator_RowDeletedName="MATERIALRowDeleted" msprop:Generator_RowClassName="MATERIALRow" msprop:Generator_UserTableName="MATERIAL" msprop:Generator_RowEvArgName="MATERIALRowChangeEvent">
+        <xs:element name="MATERIAL" msprop:Generator_TableClassName="MATERIALDataTable" msprop:Generator_TableVarName="tableMATERIAL" msprop:Generator_TablePropName="MATERIAL" msprop:Generator_RowDeletingName="MATERIALRowDeleting" msprop:Generator_RowChangingName="MATERIALRowChanging" msprop:Generator_RowEvHandlerName="MATERIALRowChangeEventHandler" msprop:Generator_RowDeletedName="MATERIALRowDeleted" msprop:Generator_UserTableName="MATERIAL" msprop:Generator_RowChangedName="MATERIALRowChanged" msprop:Generator_RowEvArgName="MATERIALRowChangeEvent" msprop:Generator_RowClassName="MATERIALRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MATERIALID" msprop:Generator_ColumnVarNameInTable="columnMATERIALID" msprop:Generator_ColumnPropNameInRow="MATERIALID" msprop:Generator_ColumnPropNameInTable="MATERIALIDColumn" msprop:Generator_UserColumnName="MATERIALID" type="xs:short" />
@@ -484,7 +493,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PLAYER" msprop:Generator_TableClassName="PLAYERDataTable" msprop:Generator_TableVarName="tablePLAYER" msprop:Generator_RowChangedName="PLAYERRowChanged" msprop:Generator_TablePropName="PLAYER" msprop:Generator_RowDeletingName="PLAYERRowDeleting" msprop:Generator_RowChangingName="PLAYERRowChanging" msprop:Generator_RowEvHandlerName="PLAYERRowChangeEventHandler" msprop:Generator_RowDeletedName="PLAYERRowDeleted" msprop:Generator_RowClassName="PLAYERRow" msprop:Generator_UserTableName="PLAYER" msprop:Generator_RowEvArgName="PLAYERRowChangeEvent">
+        <xs:element name="PLAYER" msprop:Generator_TableClassName="PLAYERDataTable" msprop:Generator_TableVarName="tablePLAYER" msprop:Generator_TablePropName="PLAYER" msprop:Generator_RowDeletingName="PLAYERRowDeleting" msprop:Generator_RowChangingName="PLAYERRowChanging" msprop:Generator_RowEvHandlerName="PLAYERRowChangeEventHandler" msprop:Generator_RowDeletedName="PLAYERRowDeleted" msprop:Generator_UserTableName="PLAYER" msprop:Generator_RowChangedName="PLAYERRowChanged" msprop:Generator_RowEvArgName="PLAYERRowChangeEvent" msprop:Generator_RowClassName="PLAYERRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PLAYERID" msprop:Generator_ColumnVarNameInTable="columnPLAYERID" msprop:Generator_ColumnPropNameInRow="PLAYERID" msprop:Generator_ColumnPropNameInTable="PLAYERIDColumn" msprop:Generator_UserColumnName="PLAYERID" type="xs:short" />
@@ -493,7 +502,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="RUCKSACK" msprop:Generator_TableClassName="RUCKSACKDataTable" msprop:Generator_TableVarName="tableRUCKSACK" msprop:Generator_RowChangedName="RUCKSACKRowChanged" msprop:Generator_TablePropName="RUCKSACK" msprop:Generator_RowDeletingName="RUCKSACKRowDeleting" msprop:Generator_RowChangingName="RUCKSACKRowChanging" msprop:Generator_RowEvHandlerName="RUCKSACKRowChangeEventHandler" msprop:Generator_RowDeletedName="RUCKSACKRowDeleted" msprop:Generator_RowClassName="RUCKSACKRow" msprop:Generator_UserTableName="RUCKSACK" msprop:Generator_RowEvArgName="RUCKSACKRowChangeEvent">
+        <xs:element name="RUCKSACK" msprop:Generator_TableClassName="RUCKSACKDataTable" msprop:Generator_TableVarName="tableRUCKSACK" msprop:Generator_TablePropName="RUCKSACK" msprop:Generator_RowDeletingName="RUCKSACKRowDeleting" msprop:Generator_RowChangingName="RUCKSACKRowChanging" msprop:Generator_RowEvHandlerName="RUCKSACKRowChangeEventHandler" msprop:Generator_RowDeletedName="RUCKSACKRowDeleted" msprop:Generator_UserTableName="RUCKSACK" msprop:Generator_RowChangedName="RUCKSACKRowChanged" msprop:Generator_RowEvArgName="RUCKSACKRowChangeEvent" msprop:Generator_RowClassName="RUCKSACKRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ITEMID" msprop:Generator_ColumnVarNameInTable="columnITEMID" msprop:Generator_ColumnPropNameInRow="ITEMID" msprop:Generator_ColumnPropNameInTable="ITEMIDColumn" msprop:Generator_UserColumnName="ITEMID" type="xs:short" />
@@ -512,7 +521,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TOOL" msprop:Generator_TableClassName="TOOLDataTable" msprop:Generator_TableVarName="tableTOOL" msprop:Generator_RowChangedName="TOOLRowChanged" msprop:Generator_TablePropName="TOOL" msprop:Generator_RowDeletingName="TOOLRowDeleting" msprop:Generator_RowChangingName="TOOLRowChanging" msprop:Generator_RowEvHandlerName="TOOLRowChangeEventHandler" msprop:Generator_RowDeletedName="TOOLRowDeleted" msprop:Generator_RowClassName="TOOLRow" msprop:Generator_UserTableName="TOOL" msprop:Generator_RowEvArgName="TOOLRowChangeEvent">
+        <xs:element name="TOOL" msprop:Generator_TableClassName="TOOLDataTable" msprop:Generator_TableVarName="tableTOOL" msprop:Generator_TablePropName="TOOL" msprop:Generator_RowDeletingName="TOOLRowDeleting" msprop:Generator_RowChangingName="TOOLRowChanging" msprop:Generator_RowEvHandlerName="TOOLRowChangeEventHandler" msprop:Generator_RowDeletedName="TOOLRowDeleted" msprop:Generator_UserTableName="TOOL" msprop:Generator_RowChangedName="TOOLRowChanged" msprop:Generator_RowEvArgName="TOOLRowChangeEvent" msprop:Generator_RowClassName="TOOLRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TOOLID" msprop:Generator_ColumnVarNameInTable="columnTOOLID" msprop:Generator_ColumnPropNameInRow="TOOLID" msprop:Generator_ColumnPropNameInTable="TOOLIDColumn" msprop:Generator_UserColumnName="TOOLID" type="xs:short" />
@@ -527,7 +536,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="GAMEUSERDETAILS" msprop:Generator_TableClassName="GAMEUSERDETAILSDataTable" msprop:Generator_TableVarName="tableGAMEUSERDETAILS" msprop:Generator_RowChangedName="GAMEUSERDETAILSRowChanged" msprop:Generator_TablePropName="GAMEUSERDETAILS" msprop:Generator_RowDeletingName="GAMEUSERDETAILSRowDeleting" msprop:Generator_RowChangingName="GAMEUSERDETAILSRowChanging" msprop:Generator_RowEvHandlerName="GAMEUSERDETAILSRowChangeEventHandler" msprop:Generator_RowDeletedName="GAMEUSERDETAILSRowDeleted" msprop:Generator_RowClassName="GAMEUSERDETAILSRow" msprop:Generator_UserTableName="GAMEUSERDETAILS" msprop:Generator_RowEvArgName="GAMEUSERDETAILSRowChangeEvent">
+        <xs:element name="GAMEUSERDETAILS" msprop:Generator_TableClassName="GAMEUSERDETAILSDataTable" msprop:Generator_TableVarName="tableGAMEUSERDETAILS" msprop:Generator_TablePropName="GAMEUSERDETAILS" msprop:Generator_RowDeletingName="GAMEUSERDETAILSRowDeleting" msprop:Generator_RowChangingName="GAMEUSERDETAILSRowChanging" msprop:Generator_RowEvHandlerName="GAMEUSERDETAILSRowChangeEventHandler" msprop:Generator_RowDeletedName="GAMEUSERDETAILSRowDeleted" msprop:Generator_UserTableName="GAMEUSERDETAILS" msprop:Generator_RowChangedName="GAMEUSERDETAILSRowChanged" msprop:Generator_RowEvArgName="GAMEUSERDETAILSRowChangeEvent" msprop:Generator_RowClassName="GAMEUSERDETAILSRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="USERID" msprop:Generator_ColumnVarNameInTable="columnUSERID" msprop:Generator_ColumnPropNameInRow="USERID" msprop:Generator_ColumnPropNameInTable="USERIDColumn" msprop:Generator_UserColumnName="USERID" type="xs:short" />
@@ -541,7 +550,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="QUICKINVENTORYVIEW" msprop:Generator_TableClassName="QUICKINVENTORYVIEWDataTable" msprop:Generator_TableVarName="tableQUICKINVENTORYVIEW" msprop:Generator_RowChangedName="QUICKINVENTORYVIEWRowChanged" msprop:Generator_TablePropName="QUICKINVENTORYVIEW" msprop:Generator_RowDeletingName="QUICKINVENTORYVIEWRowDeleting" msprop:Generator_RowChangingName="QUICKINVENTORYVIEWRowChanging" msprop:Generator_RowEvHandlerName="QUICKINVENTORYVIEWRowChangeEventHandler" msprop:Generator_RowDeletedName="QUICKINVENTORYVIEWRowDeleted" msprop:Generator_RowClassName="QUICKINVENTORYVIEWRow" msprop:Generator_UserTableName="QUICKINVENTORYVIEW" msprop:Generator_RowEvArgName="QUICKINVENTORYVIEWRowChangeEvent">
+        <xs:element name="QUICKINVENTORYVIEW" msprop:Generator_TableClassName="QUICKINVENTORYVIEWDataTable" msprop:Generator_TableVarName="tableQUICKINVENTORYVIEW" msprop:Generator_TablePropName="QUICKINVENTORYVIEW" msprop:Generator_RowDeletingName="QUICKINVENTORYVIEWRowDeleting" msprop:Generator_RowChangingName="QUICKINVENTORYVIEWRowChanging" msprop:Generator_RowEvHandlerName="QUICKINVENTORYVIEWRowChangeEventHandler" msprop:Generator_RowDeletedName="QUICKINVENTORYVIEWRowDeleted" msprop:Generator_UserTableName="QUICKINVENTORYVIEW" msprop:Generator_RowChangedName="QUICKINVENTORYVIEWRowChanged" msprop:Generator_RowEvArgName="QUICKINVENTORYVIEWRowChangeEvent" msprop:Generator_RowClassName="QUICKINVENTORYVIEWRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TOOLNAME" msprop:Generator_ColumnVarNameInTable="columnTOOLNAME" msprop:Generator_ColumnPropNameInRow="TOOLNAME" msprop:Generator_ColumnPropNameInTable="TOOLNAMEColumn" msprop:Generator_UserColumnName="TOOLNAME" minOccurs="0">
@@ -591,10 +600,10 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_MATERIALIDGAMEMAP" msdata:parent="MATERIAL" msdata:child="GAMEMAP" msdata:parentkey="MATERIALID" msdata:childkey="MATERIALID" msprop:Generator_UserChildTable="GAMEMAP" msprop:Generator_ChildPropName="GetGAMEMAPRows" msprop:Generator_UserRelationName="FK_MATERIALIDGAMEMAP" msprop:Generator_ParentPropName="MATERIALRow" msprop:Generator_RelationVarName="relationFK_MATERIALIDGAMEMAP" msprop:Generator_UserParentTable="MATERIAL" />
-      <msdata:Relationship name="FK_USERID" msdata:parent="GAMEUSER" msdata:child="PLAYER" msdata:parentkey="USERID" msdata:childkey="USERID" msprop:Generator_UserChildTable="PLAYER" msprop:Generator_ChildPropName="GetPLAYERRows" msprop:Generator_UserRelationName="FK_USERID" msprop:Generator_RelationVarName="relationFK_USERID" msprop:Generator_UserParentTable="GAMEUSER" msprop:Generator_ParentPropName="GAMEUSERRow" />
-      <msdata:Relationship name="FK_MATERIALID" msdata:parent="MATERIAL" msdata:child="RUCKSACK" msdata:parentkey="MATERIALID" msdata:childkey="MATERIALID" msprop:Generator_UserChildTable="RUCKSACK" msprop:Generator_ChildPropName="GetRUCKSACKRows" msprop:Generator_UserRelationName="FK_MATERIALID" msprop:Generator_RelationVarName="relationFK_MATERIALID" msprop:Generator_UserParentTable="MATERIAL" msprop:Generator_ParentPropName="MATERIALRow" />
-      <msdata:Relationship name="FK_TOOLID" msdata:parent="TOOL" msdata:child="RUCKSACK" msdata:parentkey="TOOLID" msdata:childkey="TOOLID" msprop:Generator_UserChildTable="RUCKSACK" msprop:Generator_ChildPropName="GetRUCKSACKRows" msprop:Generator_UserRelationName="FK_TOOLID" msprop:Generator_ParentPropName="TOOLRow" msprop:Generator_RelationVarName="relationFK_TOOLID" msprop:Generator_UserParentTable="TOOL" />
+      <msdata:Relationship name="FK_MATERIALIDGAMEMAP" msdata:parent="MATERIAL" msdata:child="GAMEMAP" msdata:parentkey="MATERIALID" msdata:childkey="MATERIALID" msprop:Generator_UserChildTable="GAMEMAP" msprop:Generator_ChildPropName="GetGAMEMAPRows" msprop:Generator_UserRelationName="FK_MATERIALIDGAMEMAP" msprop:Generator_RelationVarName="relationFK_MATERIALIDGAMEMAP" msprop:Generator_UserParentTable="MATERIAL" msprop:Generator_ParentPropName="MATERIALRow" />
+      <msdata:Relationship name="FK_USERID" msdata:parent="GAMEUSER" msdata:child="PLAYER" msdata:parentkey="USERID" msdata:childkey="USERID" msprop:Generator_UserChildTable="PLAYER" msprop:Generator_ChildPropName="GetPLAYERRows" msprop:Generator_UserRelationName="FK_USERID" msprop:Generator_ParentPropName="GAMEUSERRow" msprop:Generator_RelationVarName="relationFK_USERID" msprop:Generator_UserParentTable="GAMEUSER" />
+      <msdata:Relationship name="FK_MATERIALID" msdata:parent="MATERIAL" msdata:child="RUCKSACK" msdata:parentkey="MATERIALID" msdata:childkey="MATERIALID" msprop:Generator_UserChildTable="RUCKSACK" msprop:Generator_ChildPropName="GetRUCKSACKRows" msprop:Generator_UserRelationName="FK_MATERIALID" msprop:Generator_ParentPropName="MATERIALRow" msprop:Generator_RelationVarName="relationFK_MATERIALID" msprop:Generator_UserParentTable="MATERIAL" />
+      <msdata:Relationship name="FK_TOOLID" msdata:parent="TOOL" msdata:child="RUCKSACK" msdata:parentkey="TOOLID" msdata:childkey="TOOLID" msprop:Generator_UserChildTable="RUCKSACK" msprop:Generator_ChildPropName="GetRUCKSACKRows" msprop:Generator_UserRelationName="FK_TOOLID" msprop:Generator_RelationVarName="relationFK_TOOLID" msprop:Generator_UserParentTable="TOOL" msprop:Generator_ParentPropName="TOOLRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

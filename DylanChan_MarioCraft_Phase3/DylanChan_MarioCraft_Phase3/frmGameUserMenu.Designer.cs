@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGameUserMenu));
             this.btnExit = new System.Windows.Forms.Button();
             this.txtLogOut = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -36,14 +37,17 @@
             this.uSEREMAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gAMEUSERDETAILSBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new DylanChan_MarioCraft_Phase3.DataSet1();
+            this.qUICKINVENTORYVIEWBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gAMEUSERDETAILSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gAMEUSERBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gAMEUSERTableAdapter = new DylanChan_MarioCraft_Phase3.DataSet1TableAdapters.GAMEUSERTableAdapter();
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gAMEUSERDETAILSTableAdapter = new DylanChan_MarioCraft_Phase3.DataSet1TableAdapters.GAMEUSERDETAILSTableAdapter();
+            this.qUICKINVENTORYVIEWTableAdapter = new DylanChan_MarioCraft_Phase3.DataSet1TableAdapters.QUICKINVENTORYVIEWTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gAMEUSERDETAILSBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUICKINVENTORYVIEWBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gAMEUSERDETAILSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gAMEUSERBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
@@ -51,7 +55,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(740, 340);
+            this.btnExit.Location = new System.Drawing.Point(758, 360);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 5;
@@ -61,7 +65,7 @@
             // 
             // txtLogOut
             // 
-            this.txtLogOut.Location = new System.Drawing.Point(2, 340);
+            this.txtLogOut.Location = new System.Drawing.Point(0, 360);
             this.txtLogOut.Name = "txtLogOut";
             this.txtLogOut.Size = new System.Drawing.Size(75, 23);
             this.txtLogOut.TabIndex = 6;
@@ -104,6 +108,11 @@
             this.dataSet1.DataSetName = "DataSet1";
             this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // qUICKINVENTORYVIEWBindingSource
+            // 
+            this.qUICKINVENTORYVIEWBindingSource.DataMember = "QUICKINVENTORYVIEW";
+            this.qUICKINVENTORYVIEWBindingSource.DataSource = this.dataSet1;
+            // 
             // gAMEUSERDETAILSBindingSource
             // 
             this.gAMEUSERDETAILSBindingSource.DataMember = "GAMEUSERDETAILS";
@@ -127,21 +136,27 @@
             // 
             this.gAMEUSERDETAILSTableAdapter.ClearBeforeFill = true;
             // 
+            // qUICKINVENTORYVIEWTableAdapter
+            // 
+            this.qUICKINVENTORYVIEWTableAdapter.ClearBeforeFill = true;
+            // 
             // frmGameUserMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DylanChan_MarioCraft_Phase3.Properties.Resources.Mario_Wallpaper;
-            this.ClientSize = new System.Drawing.Size(815, 364);
+            this.ClientSize = new System.Drawing.Size(834, 383);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtLogOut);
             this.Controls.Add(this.btnExit);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGameUserMenu";
             this.Text = "GameUserMenu";
             this.Load += new System.EventHandler(this.GameUserMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gAMEUSERDETAILSBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUICKINVENTORYVIEWBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gAMEUSERDETAILSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gAMEUSERBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
@@ -163,5 +178,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn uSERIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn uSEREMAILDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource gAMEUSERDETAILSBindingSource1;
+        private System.Windows.Forms.BindingSource qUICKINVENTORYVIEWBindingSource;
+        private DataSet1TableAdapters.QUICKINVENTORYVIEWTableAdapter qUICKINVENTORYVIEWTableAdapter;
     }
 }

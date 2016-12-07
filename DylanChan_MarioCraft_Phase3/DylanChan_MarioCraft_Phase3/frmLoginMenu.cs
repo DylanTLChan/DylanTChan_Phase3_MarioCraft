@@ -135,9 +135,6 @@ namespace DylanChan_MarioCraft_Phase3
         {
             txtPassword.UseSystemPasswordChar = true;
         }
-
-       
-
        
     }
 }
