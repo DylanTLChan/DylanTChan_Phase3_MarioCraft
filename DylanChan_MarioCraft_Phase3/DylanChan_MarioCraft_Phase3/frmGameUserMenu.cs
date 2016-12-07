@@ -36,15 +36,20 @@ namespace DylanChan_MarioCraft_Phase3
         {
             //Retrieve 
             Model1 ctx = new Model1();
-           var result = from gameUser in ctx.GAMEUSERs
+           var retriveEmail = from gameUser in ctx.GAMEUSERs
                          where gameUser.USEREMAIL == "DylanChan@gmail.com"
                          select gameUser;
-            this.txtEmail.Text = result.First().USEREMAIL;
+           this.txtEmail.Text = retriveEmail.First().USEREMAIL;
 
-            var result1 = from gameUser in ctx.GAMEUSERs
+            var retrivePassword = from gameUser in ctx.GAMEUSERs
                           where gameUser.USERPASSWORD == "Dcqwer123"
                           select gameUser;
-            this.txtPassword.Text = result1.First().USERPASSWORD;
+            this.txtPassword.Text = retrivePassword.First().USERPASSWORD;
+
+            var retriveItem = from gameUser in ctx.RUCKSACKs
+                          where gameUser.ITEMDESC == "Opal"
+                          select gameUser;
+            this.txtItem.Text = retriveItem.First().ITEMDESC;
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -35,6 +35,8 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.txtLogOut = new System.Windows.Forms.Button();
+            this.txtItem = new System.Windows.Forms.TextBox();
+            this.lblItem = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRetrieve
@@ -49,6 +51,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Enabled = false;
             this.txtEmail.Location = new System.Drawing.Point(372, 146);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(165, 20);
@@ -78,6 +81,7 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Enabled = false;
             this.txtPassword.Location = new System.Drawing.Point(372, 192);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(165, 20);
@@ -103,12 +107,33 @@
             this.txtLogOut.UseVisualStyleBackColor = true;
             this.txtLogOut.Click += new System.EventHandler(this.txtLogOut_Click);
             // 
+            // txtItem
+            // 
+            this.txtItem.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtItem.Location = new System.Drawing.Point(372, 100);
+            this.txtItem.Name = "txtItem";
+            this.txtItem.Size = new System.Drawing.Size(100, 20);
+            this.txtItem.TabIndex = 7;
+            // 
+            // lblItem
+            // 
+            this.lblItem.AutoSize = true;
+            this.lblItem.BackColor = System.Drawing.Color.Transparent;
+            this.lblItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItem.Location = new System.Drawing.Point(260, 100);
+            this.lblItem.Name = "lblItem";
+            this.lblItem.Size = new System.Drawing.Size(49, 25);
+            this.lblItem.TabIndex = 8;
+            this.lblItem.Text = "Item";
+            // 
             // frmGameUserMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DylanChan_MarioCraft_Phase3.Properties.Resources.Mario_Wallpaper;
             this.ClientSize = new System.Drawing.Size(797, 347);
+            this.Controls.Add(this.lblItem);
+            this.Controls.Add(this.txtItem);
             this.Controls.Add(this.txtLogOut);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtPassword);
@@ -133,5 +158,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button txtLogOut;
+        private System.Windows.Forms.TextBox txtItem;
+        private System.Windows.Forms.Label lblItem;
     }
 }
